@@ -1,8 +1,8 @@
 ﻿/*
-* 작 성 일: 2023-12-01
-* 문재 번호: 18870
-* 문제 제목: 좌표 압축
-* 문제 링크: https://www.acmicpc.net/problem/18870
+* 작 성 일: 2023-12-02
+* 문재 번호: 10815
+* 문제 제목: 숫자 카드
+* 문제 링크: https://www.acmicpc.net/problem/10815
 * 풀이 방법: Contains과 StringBuilder를 이용한 풀이
 */
 using System;
