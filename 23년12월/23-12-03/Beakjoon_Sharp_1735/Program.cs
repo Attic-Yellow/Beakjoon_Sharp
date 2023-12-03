@@ -32,6 +32,22 @@ class Program
 
     static void Main(string[] args)
     {
+        int A, B, C, D; // 분수의 분자와 분모
+        string[] input = Console.ReadLine().Split();
+        A = int.Parse(input[0]);
+        B = int.Parse(input[1]);
 
+        input = Console.ReadLine().Split();
+        C = int.Parse(input[0]);
+        D = int.Parse(input[1]);
+
+        int LCMValue = LCM(B, D); // 두 분모의 최소공배수
+        int numerator = A * (LCMValue / B) + C * (LCMValue / D); // 두 분수의 분자를 최소공배수로 맞춘 후 더함
+        int GCDValue = GCD(numerator, LCMValue); // 두 분수의 합의 분자와 분모의 최대공약수
+
+        numerator /= GCDValue; // 최대공약수로 분자를 나누어 기약분수 형태로 축약
+        LCMValue /= GCDValue; // 최대공약수로 분모를 나누어 기약분수 형태로 축약
+
+        Console.WriteLine(numerator + " " + LCMValue); // 기약분수 형태의 결과 출력
     }
 }
