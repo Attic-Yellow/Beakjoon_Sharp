@@ -30,5 +30,3 @@ class Program
         Console.WriteLine($"{x} {y}");
     }
 }
-
-/*블로그 작성 안함 작성 해야함*/
